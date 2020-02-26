@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import AddCar from "../components/AddCar";
-import { addCar, removeCar } from "../redux/actions";
+import { addCar } from "../redux/actions";
 
 const mapStateToProps = state => {
   return {
@@ -10,8 +10,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    addCar: car => dispatch(addCar(car)),
-    removeCar: index => dispatch(removeCar(index))
+    addCar: car => dispatch(addCar(car))
   };
 };
 
